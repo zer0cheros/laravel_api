@@ -9,7 +9,7 @@
 
 ## Laravel API
 
-<p>Just a simple laravel api made with anctum authentication....</p>
+<p>Just a simple laravel api made with sanctum authentication....</p>
 
 ### Routs
 
