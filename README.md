@@ -14,14 +14,14 @@
 ### Routs
 
 #### public
-<ul>
+<ul align="center">
     <span style="color: green;">GET</span><li>/api/products</li>
     <span style="color: green;">GET</span><li>/api/products/{id}</li>
     <span style="color: green;">POST</span><li>/api/register</li>
 </ul>
 
 #### protected
-<ul>
+<ul align="center">
     <span style="color: green;">POST</span><li>/api/login</li>
     <span style="color: green;">POST</span><li>/api/products</li>
     <span style="color: green;">POST</span><li>/api/logout</li>
