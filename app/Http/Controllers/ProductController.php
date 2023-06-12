@@ -22,7 +22,7 @@ class ProductController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required',
-            'price' => 'required|numeric',
+            'price' => 'required|numeric|max:99999',
             'description' => 'required',
         ]);
 
@@ -30,7 +30,7 @@ class ProductController extends Controller
         $product = Products::create($validatedData);
 
         // Redirect to the product details page or perform any other action
-        return redirect()->route('products.show', $product->id);
+        return response()->json($product);
     }
 
     /**

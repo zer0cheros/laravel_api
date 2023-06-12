@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -18,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 //public routes
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'show']);
-Route::post('/register', 'AuthController@register');
+Route::post('/register', [AuthController::class, 'register']);
 
 
 
@@ -29,7 +30,7 @@ Route::post('/register', 'AuthController@register');
 
 //protected
 Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/login', 'AuthController@login');
-    Route::post('/logout', 'AuthController@logout');
+    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/logout', [AuthController::class, 'logout']);
     Route::post('/products', [ProductController::class, 'store']);
 });

@@ -1,0 +1,30 @@
+POST https://127.0.0.1:56124/api/register HTTP/1.1
+User-Agent: rest-client
+Content-type: application/json
+
+{
+    "name": "Christian2",
+    "email": "chris2@gmail.com",
+    "password": "123456"
+}
+
+###
+POST https://127.0.0.1:56124/api/products HTTP/1.1
+User-Agent: rest-client
+Content-type: application/json
+Authorization: Bearer 2|BAL0sssPEQ5Vzm6VgzGRr37NCLsYmzKJBlVKlkc5fy 
+
+{
+    "name": "iphone 12",
+    "price": 120,
+    "description": "bla2 bla"
+}
+###
+POST https://127.0.0.1:56124/api/login HTTP/1.1
+User-Agent: rest-client
+Content-type: application/json
+
+{
+    "email": "chris2@gmail.com",
+    "password": "123456"
+}
