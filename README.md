@@ -9,7 +9,7 @@
 
 ## Laravel API
 
-<p>Just a simple laravel api i made with sanctum authentication for the students inprove ther frontend skills....</p>
+<p>Just a simple laravel api i made with sanctum authentication for the students improve frontend skills....</p>
 
 ### Routs
 
